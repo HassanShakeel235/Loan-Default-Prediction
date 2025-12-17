@@ -76,32 +76,16 @@ Classical Machine Learning Models:
 
 ### **Results & Analysis**
 
+#### **Model Performance Comparison**
 
-#### **First Classical Algorithm: Logistic Regression**
+| Model | Accuracy | Recall (Default) | F1-Score (Default) | AUC |
+|------|---------|------------------|--------------------|-----|
+| Logistic Regression | 0.8853 | 0.03 | 0.0645 | — |
+| Decision Tree | 0.8849 | — | 0.0420 | — |
+| Neural Network | 0.8846 | 0.0693 | 0.1224 | 0.7542 |
 
-<img width="450" height="200" alt="image" src="https://github.com/user-attachments/assets/bed9a5f1-8847-4514-a7c3-1245e16b6fc7" />
-<img width="420" height="350" alt="image" src="https://github.com/user-attachments/assets/00a640d3-a73c-40c2-8c51-9cd1b8360393" />
 
-#### **Second Classical Algorithm: Decision Tree Classifier**
 
-<img width="350" height="170" alt="image" src="https://github.com/user-attachments/assets/12947e49-03f2-4f1e-bce8-33be75f6b74b" />
-<img width="400" height="340" alt="image" src="https://github.com/user-attachments/assets/1a8abf70-db3a-41e0-bb73-f17abb27fc1f" />
-
-#### **Comparison of Classical Algorithms**
-
-<img width="360" height="100" alt="image" src="https://github.com/user-attachments/assets/494d4e64-1dbf-4930-957d-1c53868ed41e" />
-
-#### **Neural Network**
-
-<img width="640" height="400" alt="image" src="https://github.com/user-attachments/assets/95600d34-698e-4f32-8ea6-f32830d64016" />
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/a781f934-3805-40e2-8102-90b5d92dcc25" />
-
-#### **Comparison of Classical Models and Neural Network**
-
-<img width="370" height="115" alt="image" src="https://github.com/user-attachments/assets/3ef711f2-f9ee-4516-8fce-a37ec6917413" />
-<img width="670" height="360" alt="image" src="https://github.com/user-attachments/assets/472e8b32-5d36-4074-b86d-fab0f4946d71" />
-
-<img width="740" height="470" alt="image" src="https://github.com/user-attachments/assets/490ae312-3174-4aa8-a1e6-93d4f18b9473" />
 
 Although all models achieved similar accuracy values (=88%), accuracy alone is misleading due to the strong class imbalance in the dataset. Logistic Regression and Decision Tree classifiers achieved high accuracy by predominantly predicting the majority class (non-default), resulting in extremely low recall and F1-scores for the default class. In contrast, the neural network model demonstrated superior performance in identifying defaulters, achieving the highest F1-score (0.1224) and recall (0.0693) for the default class. This highlights the effectiveness of deep learning in capturing complex non-linear relationships in imbalanced financial datasets.
 Low recall and F1-score are expected in imbalanced credit-risk datasets when the model prioritizes overall accuracy or “No Default” predictions.
