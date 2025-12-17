@@ -1,4 +1,5 @@
-# Loan-Default-Prediction
+# Machine Learning Classical Models vs Deep Learning Neural Network
+## Loan-Default-Prediction
 
 
 ### **Team Members:**
@@ -6,9 +7,11 @@
 - **Muhammad Muneeb** 
 
 - **Hassan Shakeel**
+---
 
 
 ### **Abstract**
+
 
 Loan default prediction is a critical task for financial institutions to minimize credit risk and improve decision-making. This project focuses on predicting whether a borrower will default on a loan using financial and demographic attributes. Classical machine learning models and deep learning approaches are implemented and compared using multiple evaluation metrics. Experimental results show that deep learning models outperform traditional approaches, offering improved recall and reduced financial risk.
 
@@ -24,12 +27,12 @@ Loan default prediction helps banks and lending institutions assess the risk ass
 
 - **Source:** Public financial loan dataset
 
-- **Records:** Varies depending on preprocessing
+- **Records:** Loan related information on more than 250,000+ individuals
 
 - **Target Variable:** Loan Default (0 = No Default, 1 = Default)
   
 - **Features:**
-Demographic attributes (age, income, employment status),
+Demographic attributes (age, income, employment type),
 
 
 Financial attributes (loan amount, interest rate, credit score)
