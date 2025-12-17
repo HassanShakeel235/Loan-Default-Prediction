@@ -66,9 +66,9 @@ Classical Machine Learning Models:
 
 - Hidden layers with ReLU activation
 
-- Regularization using Dropout and Batch Normalization
+- Regularization using Dropout
 
-- Early stopping and learning rate scheduling
+- Learning rate Scheduling
 
 
 ### **Results & Analysis**
