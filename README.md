@@ -51,15 +51,22 @@ Financial attributes (loan amount, interest rate, credit score)
 ### **Methodology**
 Classical Machine Learning Models:
 
-- Logistic Regression
+Logistic Regression
 
-- Decision Tree Classifier
+- Automated Pipeline: Used a ColumnTransformer to simultaneously handle mean-imputation for missing values, Standard Scaling for numerical data, and One-Hot Encoding for categories.
+- Stratified Sampling: Performed an 80/20 data split using stratify=y to ensure the model trained on a balanced representation of both "Default" and "No Default" cases.
+- Multidimensional Evaluation: Beyond simple accuracy, the methodology focuses on the F1-Score for the "Default" class to ensure a balance between precision and recall for high-risk predictions.
+  
+
+Decision Tree Classifier
+- Non-Linear Classification: Implemented a Decision Tree Classifier, which captures complex, non-linear relationships between features (like Credit Score and Loan Amount) that Logistic Regression might miss.
+- Visual Diagnostics: Utilized Seaborn-based Heatmaps to analyze the confusion matrix, specifically tracking how many "Defaults" were correctly identified versus misclassified.
+- Performance Benchmarking: Stored F1-Scores for both classes into a global results dictionary to allow for a direct head-to-head comparison with the Logistic Regression model.
 
 
 #### **Techniques Used:**
 
 - Feature engineering
-
 - Hyperparameter tuning
 
 
