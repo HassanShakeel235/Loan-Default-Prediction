@@ -1,18 +1,22 @@
 # Loan-Default-Prediction
 
+
 ### **Team Members:**
 
 - **Muhammad Muneeb** 
 
 - **Hassan Shakeel**
 
+
 ### **Abstract**
 
 Loan default prediction is a critical task for financial institutions to minimize credit risk and improve decision-making. This project focuses on predicting whether a borrower will default on a loan using financial and demographic attributes. Classical machine learning models and deep learning approaches are implemented and compared using multiple evaluation metrics. Experimental results show that deep learning models outperform traditional approaches, offering improved recall and reduced financial risk.
 
+
 ### **Introduction**
 
 Loan default prediction helps banks and lending institutions assess the risk associated with granting loans. Incorrect predictions can result in financial losses or missed business opportunities. The objective of this project is to develop reliable predictive models using both classical machine learning and deep learning techniques and compare their performance using robust evaluation strategies.
+
 
 ### **Dataset Description**
 
@@ -23,6 +27,7 @@ Loan default prediction helps banks and lending institutions assess the risk ass
 **Records:** Varies depending on preprocessing
 
 **Target Variable:** Loan Default (0 = No Default, 1 = Default)
+
 
 ### **Features:**
 
@@ -40,30 +45,34 @@ Loan default prediction helps banks and lending institutions assess the risk ass
 
 - Train-test split with fixed random seed
 
+
 ### **Methodology**
-Classical Machine Learning Models
+Classical Machine Learning Models:
 
-Logistic Regression
+- Logistic Regression
 
-Random Forest Classifier
+- Random Forest Classifier
+
 
 #### **Techniques Used:**
 
-Feature engineering
+- Feature engineering
 
-Hyperparameter tuning using GridSearchCV
+- Hyperparameter tuning using GridSearchCV
 
-5-fold cross-validation
+- 5-fold cross-validation
+
 
 ### **Deep Learning Model**
 
-Fully connected neural network using TensorFlow
+- Fully connected neural network using TensorFlow
 
-Hidden layers with ReLU activation
+- Hidden layers with ReLU activation
 
-Regularization using Dropout and Batch Normalization
+- Regularization using Dropout and Batch Normalization
 
-Early stopping and learning rate scheduling
+- Early stopping and learning rate scheduling
+
 
 ### **Results & Analysis**
 
@@ -97,17 +106,11 @@ Early stopping and learning rate scheduling
 Although all models achieved similar accuracy values (=88%), accuracy alone is misleading due to the strong class imbalance in the dataset. Logistic Regression and Decision Tree classifiers achieved high accuracy by predominantly predicting the majority class (non-default), resulting in extremely low recall and F1-scores for the default class. In contrast, the neural network model demonstrated superior performance in identifying defaulters, achieving the highest F1-score (0.1224) and recall (0.0693) for the default class. This highlights the effectiveness of deep learning in capturing complex non-linear relationships in imbalanced financial datasets.
 Low recall and F1-score are expected in imbalanced credit-risk datasets when the model prioritizes overall accuracy or “No Default” predictions.
 
-Model	Accuracy	Precision	Recall	F1-Score	ROC-AUC
-Logistic Regression	0.82	0.79	0.75	0.77	0.85
-Random Forest	0.86	0.83	0.81	0.82	0.90
-Neural Network	0.88	0.85	0.84	0.84	0.92
-### **Statistical Significance Testing**
-
-A paired t-test was conducted between the Random Forest and Neural Network models. The results indicated a statistically significant improvement (p < 0.05) in performance for the deep learning model.
 
 ### **Business Impact Analysis**
 
 Reducing false negatives is crucial in loan approval systems, as approving a high-risk borrower leads to financial losses. The neural network model reduced false negatives by approximately 12%, improving risk mitigation and decision reliability.
+
 
 ### **Conclusion & Future Work**
 
