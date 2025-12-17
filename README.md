@@ -1,7 +1,7 @@
 # Loan-Default-Prediction
 Team Members:
-**Muhammad Muneeb
-Hassan Shakeel**
+**Muhammad Muneeb**
+**Hassan Shakeel**
 
 **Abstract**
 
