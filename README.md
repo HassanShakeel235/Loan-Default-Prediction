@@ -76,6 +76,8 @@ Classical Machine Learning Models:
 
 ### **Results & Analysis**
 
+The performance of the implemented models was evaluated using multiple metrics, including accuracy, recall, F1-score, and AUC. Due to the imbalanced nature of the dataset, special emphasis was placed on the default class (class 1), as it represents high-risk borrowers. The following table summarizes the comparative performance of the Logistic Regression, Decision Tree, and Neural Network models.
+
 #### **Model Performance Comparison**
 
 | Model | Accuracy | Recall (Default) | F1-Score (Default) | AUC |
@@ -86,14 +88,14 @@ Classical Machine Learning Models:
 
 
 
+Although all models achieved similar accuracy values (88%), accuracy alone is misleading due to the strong class imbalance in the dataset. Logistic Regression and Decision Tree classifiers achieved high accuracy by predominantly predicting the majority class (non-default), resulting in extremely low recall and F1-scores for the default class. In contrast, the neural network model demonstrated superior performance in identifying defaulters, achieving the highest F1-score (0.1224) and recall (0.0693) for the default class. This highlights the effectiveness of deep learning in capturing complex non-linear relationships in imbalanced financial datasets.
 
-Although all models achieved similar accuracy values (=88%), accuracy alone is misleading due to the strong class imbalance in the dataset. Logistic Regression and Decision Tree classifiers achieved high accuracy by predominantly predicting the majority class (non-default), resulting in extremely low recall and F1-scores for the default class. In contrast, the neural network model demonstrated superior performance in identifying defaulters, achieving the highest F1-score (0.1224) and recall (0.0693) for the default class. This highlights the effectiveness of deep learning in capturing complex non-linear relationships in imbalanced financial datasets.
 Low recall and F1-score are expected in imbalanced credit-risk datasets when the model prioritizes overall accuracy or “No Default” predictions.
 
 
 ### **Business Impact Analysis**
 
-Reducing false negatives is crucial in loan approval systems, as approving a high-risk borrower leads to financial losses. The neural network model reduced false negatives by approximately 12%, improving risk mitigation and decision reliability.
+From a business perspective, false negatives are costly as they result in approving high-risk borrowers. Although Logistic Regression and Decision Tree models achieved high accuracy (88%), their very low recall for defaulters (as low as 0.03) shows poor risk detection. The neural network achieved the highest recall (0.0693) and F1-score (0.1224) for the default class, making it more effective for identifying risky borrowers despite a slight drop in overall accuracy.
 
 
 ### **Conclusion & Future Work**
