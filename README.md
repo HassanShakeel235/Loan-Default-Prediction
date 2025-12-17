@@ -63,7 +63,11 @@ Regularization using Dropout and Batch Normalization
 Early stopping and learning rate scheduling
 
 **Results & Analysis**
+
 **Performance Comparison**
+<img width="613" height="701" alt="image" src="https://github.com/user-attachments/assets/7cab36e0-6e41-423b-8f0c-a006b8d806ed" />
+
+
 Model	Accuracy	Precision	Recall	F1-Score	ROC-AUC
 Logistic Regression	0.82	0.79	0.75	0.77	0.85
 Random Forest	0.86	0.83	0.81	0.82	0.90
