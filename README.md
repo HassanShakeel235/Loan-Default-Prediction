@@ -65,7 +65,33 @@ Early stopping and learning rate scheduling
 **Results & Analysis**
 
 **Performance Comparison**
-<img width="613" height="701" alt="image" src="https://github.com/user-attachments/assets/7cab36e0-6e41-423b-8f0c-a006b8d806ed" />
+
+**First Classical Algorithm: Logistic Regression**
+
+<img width="537" height="260" alt="image" src="https://github.com/user-attachments/assets/bed9a5f1-8847-4514-a7c3-1245e16b6fc7" />
+<img width="651" height="511" alt="image" src="https://github.com/user-attachments/assets/00a640d3-a73c-40c2-8c51-9cd1b8360393" />
+
+**Second Classical Algorithm: Decision Tree Classifier**
+
+<img width="550" height="263" alt="image" src="https://github.com/user-attachments/assets/12947e49-03f2-4f1e-bce8-33be75f6b74b" />
+<img width="644" height="513" alt="image" src="https://github.com/user-attachments/assets/1a8abf70-db3a-41e0-bb73-f17abb27fc1f" />
+
+**Comparison of Classical Algorithms**
+
+<img width="531" height="141" alt="image" src="https://github.com/user-attachments/assets/494d4e64-1dbf-4930-957d-1c53868ed41e" />
+
+**Neural Network**
+
+<img width="963" height="610" alt="image" src="https://github.com/user-attachments/assets/95600d34-698e-4f32-8ea6-f32830d64016" />
+<img width="596" height="466" alt="image" src="https://github.com/user-attachments/assets/a781f934-3805-40e2-8102-90b5d92dcc25" />
+
+**Comparison of Classical Models and Neural Network**
+
+<img width="525" height="172" alt="image" src="https://github.com/user-attachments/assets/3ef711f2-f9ee-4516-8fce-a37ec6917413" />
+<img width="924" height="536" alt="image" src="https://github.com/user-attachments/assets/472e8b32-5d36-4074-b86d-fab0f4946d71" />
+
+<img width="1218" height="735" alt="image" src="https://github.com/user-attachments/assets/490ae312-3174-4aa8-a1e6-93d4f18b9473" />
+
 
 
 Model	Accuracy	Precision	Recall	F1-Score	ROC-AUC
