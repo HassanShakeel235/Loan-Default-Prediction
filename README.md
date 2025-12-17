@@ -29,7 +29,8 @@ Loan default prediction helps banks and lending institutions assess the risk ass
 - **Target Variable:** Loan Default (0 = No Default, 1 = Default)
   
 - **Features:**
-Demographic attributes (age, income, employment status)
+Demographic attributes (age, income, employment status),
+
 
 Financial attributes (loan amount, interest rate, credit score)
 
