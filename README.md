@@ -50,7 +50,7 @@ Classical Machine Learning Models:
 
 - Logistic Regression
 
-- Random Forest Classifier
+- Decision Tree Classifier
 
 
 #### **Techniques Used:**
