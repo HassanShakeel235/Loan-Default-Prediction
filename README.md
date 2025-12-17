@@ -20,22 +20,20 @@ Loan default prediction helps banks and lending institutions assess the risk ass
 
 ### **Dataset Description**
 
-**Dataset Name:** Loan_default.csv
+- **Dataset Name:** Loan_default.csv
 
-**Source:** Public financial loan dataset
+- **Source:** Public financial loan dataset
 
-**Records:** Varies depending on preprocessing
+- **Records:** Varies depending on preprocessing
 
-**Target Variable:** Loan Default (0 = No Default, 1 = Default)
+- **Target Variable:** Loan Default (0 = No Default, 1 = Default)
+  
+- **Features:**
+Demographic attributes (age, income, employment status)
 
+Financial attributes (loan amount, interest rate, credit score)
 
-### **Features:**
-
-- Demographic attributes (age, income, employment status)
-
-- Financial attributes (loan amount, interest rate, credit score)
-
-- Preprocessing Steps
+#### **Preprocessing Steps**
 
 - Handling missing values
 
@@ -58,9 +56,7 @@ Classical Machine Learning Models:
 
 - Feature engineering
 
-- Hyperparameter tuning using GridSearchCV
-
-- 5-fold cross-validation
+- Hyperparameter tuning
 
 
 ### **Deep Learning Model**
