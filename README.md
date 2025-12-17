@@ -90,8 +90,8 @@ The performance of the implemented models was evaluated using multiple metrics, 
 | Model | Accuracy | Recall (Default) | F1-Score (Default) | AUC |
 |------|---------|------------------|--------------------|-----|
 | Logistic Regression | 0.8853 | 0.03 | 0.0645 | — |
-| Decision Tree | 0.8849 | — | 0.0420 | — |
-| Neural Network | 0.8846 | 0.0693 | 0.1224 | 0.7542 |
+| Decision Tree | 0.8849 | 0.02 | 0.0420 | — |
+| Neural Network | 0.8849 | 0.0811 | 0.1406 | 0.7542 |
 
 
 
