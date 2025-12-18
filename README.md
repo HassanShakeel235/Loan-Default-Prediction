@@ -107,7 +107,7 @@ From a business perspective, false negatives are costly as they result in approv
 
 ### **Conclusion & Future Work**
 
-This project demonstrates that deep learning models provide superior performance in loan default prediction compared to classical machine learning approaches. Future work may include incorporating additional financial features, using ensemble learning, and deploying the model as a real-time decision support system.
+This project demonstrates that deep learning models provide relatively superior performance in loan default prediction compared to classical machine learning approaches. However, deep learning models' performance may still be weak due to very high class imbalance in the dataset. Future work may include incorporating additional financial features, using ensemble learning, and deploying the model as a real-time decision support system.
 
 ### **References**
 
