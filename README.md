@@ -13,7 +13,7 @@
 ### **Abstract**
 
 
-Loan default prediction is a critical task for financial institutions to minimize credit risk and improve decision-making. This project focuses on predicting whether a borrower will default on a loan using financial and demographic attributes. Classical machine learning models and deep learning approaches are implemented and compared using multiple evaluation metrics. Experimental results show that deep learning models outperform traditional approaches, offering improved recall and reduced financial risk.
+Loan default prediction is a critical task for financial institutions to minimize credit risk and improve decision-making. This project focuses on predicting whether a borrower will default on a loan using financial and demographic attributes. Classical machine learning models and deep learning approaches are implemented and compared using multiple evaluation metrics. Experimental results show that one of the two classical model outperforms deep learning model , offering improved recall and reduced financial risk.
 
 
 ### **Introduction**
@@ -65,7 +65,7 @@ Decision Tree Classifier
 
 
 #### **Techniques Used:**
-
+- Early Stopping
 - Feature engineering
 - Hyperparameter tuning
 
@@ -89,25 +89,24 @@ The performance of the implemented models was evaluated using multiple metrics, 
 
 | Model | Accuracy | Recall (Default) | F1-Score (Default) | 
 |------|---------|------------------|--------------------|
-| Logistic Regression | 0.8853 | 0.03 | 0.0645 |
-| Decision Tree | 0.8849 | 0.02 | 0.0420 |
-| Neural Network | 0.8849 | 0.0811 | 0.1406 |
+| Logistic Regression | 0.8005 | 0.4986 | 0.3672 |
+| Decision Tree | 0.7584 | 0.5013 | 0.3252 |
+| Neural Network | 0.8349 | 0.4001 | 0.3503 |
 
 
-
-Although all models achieved similar accuracy values (88%), accuracy alone is misleading due to the strong class imbalance in the dataset. Logistic Regression and Decision Tree classifiers achieved high accuracy by predominantly predicting the majority class (non-default), resulting in extremely low recall and F1-scores for the default class. In contrast, the neural network model demonstrated superior performance in identifying defaulters, achieving the highest F1-score (0.1406) and recall (0.0811) for the default class. This highlights the effectiveness of deep learning in capturing complex non-linear relationships in imbalanced financial datasets.
+Among the three models, the Neural Network achieves the highest accuracy (83.49%), indicating better overall classification performance. Logistic Regression also performs well with an accuracy of 80.05%, while the Decision Tree shows the lowest accuracy at 75.84%. However, when focusing on the F1-score for the default class, Logistic Regression performs best (0.3672), reflecting a better balance between precision and recall. The Neural Network, despite its high accuracy, has a lower F1-score (0.3503), suggesting weaker default-class detection. Overall, Logistic Regression provides the most balanced performance for identifying the default class.
 
 Low recall and F1-score are expected in imbalanced credit-risk datasets when the model prioritizes overall accuracy or “No Default” predictions.
 
 
 ### **Business Impact Analysis**
 
-From a business perspective, false negatives are costly as they result in approving high-risk borrowers. Although Logistic Regression and Decision Tree models achieved high accuracy (88%), their very low recall for defaulters (as low as 0.02) shows poor risk detection. The neural network achieved the highest recall (0.0811) and F1-score (0.1406) for the default class, making it more effective for identifying risky borrowers despite a slight drop in overall accuracy.
+From a business perspective, false negatives are costly as they lead to approving high-risk borrowers. Although the Neural Network achieved the highest overall accuracy (83.49%), accuracy alone is not sufficient for risk assessment. When focusing on the default class, Logistic Regression shows the best balance, achieving the highest F1-score (0.3672) with a competitive recall (0.4986), indicating more reliable identification of defaulters. The Decision Tree has similar recall (0.5013) but a noticeably lower F1-score (0.3252), suggesting less consistent predictions. Overall, Logistic Regression emerges as the most effective model for detecting risky borrowers.
 
 
 ### **Conclusion & Future Work**
 
-This project demonstrates that deep learning models provide relatively superior performance in loan default prediction compared to classical machine learning approaches. However, deep learning models' performance may still be weak due to very high class imbalance in the dataset. Future work may include incorporating additional financial features, using ensemble learning, and deploying the model as a real-time decision support system.
+This project demonstrates that while deep learning models can achieve higher overall accuracy in loan default prediction, superior accuracy does not necessarily translate to better detection of defaulters. Despite the Neural Network attaining the highest accuracy, its recall and F1-score for the default class remain lower than those of Logistic Regression, primarily due to the severe class imbalance in the dataset. Classical machine learning models, particularly Logistic Regression, show a more balanced performance for identifying risky borrowers. Future work may focus on addressing class imbalance through resampling techniques, incorporating additional financial features, exploring ensemble learning methods, and deploying the system as a real-time decision support tool.
 
 ### **References**
 
